@@ -1,21 +1,15 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import  LandingPage  from "./pages/landingPage/landingPage";
+import MainPage from "./pages/MainPage/MainPage";
 
 function App() {
   return (
-    <div>
-      <div className="mainContainer">
-        <div className="contentContainer">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;

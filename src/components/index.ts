@@ -1,2 +1,2 @@
-export * from "./Header/Header"
-export * from "./Footer/Footer"
+export * from "./NavBar/NavBar"
+export * from "./LandingZone/LandingZone"
