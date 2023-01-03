@@ -37,27 +37,35 @@ export const NavBar: React.FC<INav> = () => {
         <div className="navRightSideContent" id="navRightSideContent">
           {/* {isMenuActive && <div className="menuDropDown"></div>} */}
           <button
-            className="navButton"
+            className={`${isMenuActive ? "appearEffect" : ""} ${"navButton"}`}
 
           >
+            <a className="underLineAnimation" href="#">
             Home
+            </a>
           </button>
           <button
-            className="navButton"
+            className={`${isMenuActive ? "appearEffect" : ""} ${"navButton"}`}
 
           >
+            <a className="underLineAnimation" href="#">
             About
+            </a>
           </button>
           <button
-            className="navButton"
+            className={`${isMenuActive ? "appearEffect" : ""} ${"navButton"}`}
 
           >
+            <a className="underLineAnimation" href="#">
             Portfolio
+            </a>
           </button>
           <button
-            className="navButton"
+            className={`${isMenuActive ? "appearEffect" : ""} ${"navButton"}`}
           >
+            <a className="underLineAnimation" href="#">
             Contact
+            </a>
           </button>
         </div>
       </div>
