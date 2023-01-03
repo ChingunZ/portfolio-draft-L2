@@ -32,7 +32,7 @@ export const NavBar: React.FC<INav> = () => {
         </div>
       </div>
       <div
-        className={`${isMenuActive ? "menuSlide" : ""} ${"navRightSide"}`}
+        className={`${isMenuActive ? "menuOpen" : ""} ${"navRightSide"}`}
       >
         <div className="navRightSideContent" id="navRightSideContent">
           {/* {isMenuActive && <div className="menuDropDown"></div>} */}
@@ -46,7 +46,7 @@ export const NavBar: React.FC<INav> = () => {
             className="navButton"
 
           >
-            Intro
+            About
           </button>
           <button
             className="navButton"
