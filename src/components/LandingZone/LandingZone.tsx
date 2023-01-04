@@ -10,8 +10,11 @@ export const LandingZone: React.FC<ILandingZone> = () => {
     return (
         <div className="landZoneMainContainer">
             <div className="landZoneContentContainer">
+                <div>
+                    <h1 className="helloMsg">Hello</h1>
+                </div>
                 <div className="typewriter">
-                    <h1>Hi I am a...</h1>
+                    <h1>I am a web developer</h1>
                 </div>
             </div>
         </div>

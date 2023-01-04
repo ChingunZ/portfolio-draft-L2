@@ -12,11 +12,6 @@
   align-items: center;
   z-index: 9999;
 }
-
-.navLeftSide .navBackground {
-  cursor: pointer;
-}
-
 .navRightSide {
   width: 50%;
   height: 100%;
@@ -28,6 +23,8 @@
 .navRightSideContent {
   font-size: 10px;
   font-weight: 600;
+  display: flex;
+  margin-top: 10px;
 }
 
 .navButton {
@@ -36,9 +33,8 @@
   color: white;
   font-weight: 900;
   font-size: 1vw;
-  margin: 0px 25px;
-  border-bottom: 0.5px solid white;
   cursor: pointer;
+
 }
 
 /* different color mode styling start */
@@ -46,11 +42,19 @@
 
 .navBackground {
   color: white;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 300;
   margin-left: 15%;
+  cursor: pointer;
+  display: flex;
 }
-
+.logoCircles {
+  margin: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #66fcf1;
+  border-radius: 100%;
+}
 .navRightSideContent .navButton {
   border: none;
   background: none;
@@ -60,13 +64,17 @@
   cursor: pointer;
 }
 .underLineAnimation {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+}
+.navRightSideContent .navButton:nth-child(1) .underLineAnimation {
+  color: #95fff9;
+  font-weight: 800;
 }
 .underLineAnimation:after {
   background: none repeat scroll 0 0 transparent;
@@ -76,7 +84,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #66fcf1;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -92,7 +100,7 @@
 }
 
 #Hamburger {
-  color: white;
+  color: #95fff9;
 }
 
 .menuDropDown {
@@ -118,12 +126,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 10000;
     background-color: inherit;
   }
 
   .menuOpen {
-    clip-path: circle(1000px at 90% 10%) !important;
+    clip-path: circle(1300px at 90% 10%) !important;
     pointer-events: all !important;
   }
   .appearEffect {

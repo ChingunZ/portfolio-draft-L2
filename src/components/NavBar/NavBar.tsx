@@ -28,7 +28,9 @@ export const NavBar: React.FC<INav> = () => {
           className={"navBackground"
           }
         >
-          <span id="logoName">Chingun Zolboo</span>
+          <span className="logoCircles"></span>
+          <span id="logoName">CZ</span>
+          <span className="logoCircles"></span>
         </div>
       </div>
       <div
