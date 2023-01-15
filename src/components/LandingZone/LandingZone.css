@@ -23,10 +23,23 @@
 }
 
 /* text animation effect */
-.typewriter {
+
+.typeWriterTwo {
   text-align: center;
 }
-.typewriter h1 {
+
+.typeWriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing .8s steps(30, end),
+    blink-caret .5s step-end infinite;
+  padding-top: calc(10% + 1vmin);
+  height: calc(60% + 20.8vmin);
+}
+
+.typeWriterTwo h1 {
   color: #fff;
   font-size: calc(60% + 3vmin);
   font-family: monospace;
@@ -42,7 +55,12 @@
   /* Adjust as needed */
   animation:
     typing 1.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret .5s step-end infinite,
+    opacity 0s;
+  margin-top: 10vh;
+  animation-delay: .7s;
+  animation-fill-mode: forwards;  
+  opacity: 0;
 }
 
 /* The typing effect */
@@ -52,11 +70,19 @@
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
+@keyframes opacity {
+  from {
+    opacity: 0
+  }
 
-/* The typewriter cursor effect */
+  to {
+    opacity: 100%;
+  }
+}
+/* The typeWriterTwo cursor effect */
 @keyframes blink-caret {
 
   from,
